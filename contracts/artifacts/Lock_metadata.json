@@ -88,9 +88,9 @@
 								"type": "string"
 							},
 							{
-								"internalType": "uint256",
+								"internalType": "uint64",
 								"name": "votes",
-								"type": "uint256"
+								"type": "uint64"
 							}
 						],
 						"internalType": "struct Lock.Candidate[]",
@@ -175,9 +175,9 @@
 										"type": "string"
 									},
 									{
-										"internalType": "uint256",
+										"internalType": "uint64",
 										"name": "votes",
-										"type": "uint256"
+										"type": "uint64"
 									}
 								],
 								"internalType": "struct Lock.Candidate[]",
@@ -193,6 +193,11 @@
 								"internalType": "uint256",
 								"name": "endTime",
 								"type": "uint256"
+							},
+							{
+								"internalType": "string[]",
+								"name": "voted",
+								"type": "string[]"
 							}
 						],
 						"internalType": "struct Lock.ElectionDetails[]",
@@ -286,9 +291,9 @@
 										"type": "string"
 									},
 									{
-										"internalType": "uint256",
+										"internalType": "uint64",
 										"name": "votes",
-										"type": "uint256"
+										"type": "uint64"
 									}
 								],
 								"internalType": "struct Lock.Candidate[]",
@@ -304,6 +309,11 @@
 								"internalType": "uint256",
 								"name": "endTime",
 								"type": "uint256"
+							},
+							{
+								"internalType": "string[]",
+								"name": "voted",
+								"type": "string[]"
 							}
 						],
 						"internalType": "struct Lock.ElectionDetails",
@@ -352,14 +362,19 @@
 								"type": "string"
 							},
 							{
-								"internalType": "uint256",
+								"internalType": "uint64",
 								"name": "votes",
-								"type": "uint256"
+								"type": "uint64"
 							}
 						],
 						"internalType": "struct Lock.Candidate[]",
 						"name": "",
 						"type": "tuple[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
 					}
 				],
 				"stateMutability": "view",
@@ -400,6 +415,11 @@
 						"internalType": "string",
 						"name": "_candidateFullName",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_voterId",
+						"type": "string"
 					}
 				],
 				"name": "vote",
@@ -436,11 +456,11 @@
 	},
 	"sources": {
 		"contracts/Lock.sol": {
-			"keccak256": "0xebb16826099f55000e4aa3e286e72bc713c1677e91339b32d6346e8b3eb3bf9e",
+			"keccak256": "0x1db72af4598a7fdb8c58d69b10a83497d552120fd9c816851052806dfb733b6e",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://d1ff68e0b3d6176bcb75dcd7acab69e8414f2d9ba16f7eb9a2e1ed99a3406abc",
-				"dweb:/ipfs/Qmeicq2svQQ3TCJEYCyYCJunT2i8YGvRSnAq7sD9LpVLCD"
+				"bzz-raw://1cab47e1ca205ba67e5972a00dfd54efe0fe5ce36ef9bc56046d0dd386f5cd09",
+				"dweb:/ipfs/QmZJVENtdwGBnYHYu6XFtZmEXoKotGpaAJ3LL6ME9h6e7n"
 			]
 		}
 	},
